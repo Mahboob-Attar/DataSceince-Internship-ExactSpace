@@ -48,7 +48,7 @@ Task1/
   - ✅ Highlights meaningful, real shutdowns
   - ✅ Makes results cleaner and actionable
 
-#### Note on Empty Shutdown Periods
+#### ⚠️ Note on Empty Shutdown Periods
 - The `shutdown_periods.csv` file may appear empty after running the analysis.
 - **Reason:** No shutdowns or idle periods were detected according to the detection criteria (sensor thresholds, minimum duration).
 - You can adjust detection parameters to capture shorter or less prominent idle periods:
