@@ -113,7 +113,7 @@ Plots:
 - Anomaly detection enables **early fault identification**.  
 - Short-term forecasting improves **operational planning**.  
 
-This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
+``` This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
 ```
 
 ## 🔮 Future Work
