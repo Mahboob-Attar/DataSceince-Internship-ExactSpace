@@ -115,7 +115,6 @@ Plots:
 
 ``` This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
 ```
-
 ## 🔮 Future Work
 - **Real-Time Anomaly Detection:** Extend the current analysis into a live monitoring system for early fault detection.  
 - **Predictive Maintenance Alerts:** Integrate threshold-based and model-based alerts to notify operators before failures occur.  
