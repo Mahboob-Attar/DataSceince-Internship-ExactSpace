@@ -54,6 +54,15 @@ Task1/
    - ✅ Highlight meaningful, real shutdowns
    - ✅ Make the results cleaner and more actionable
 
+   ### ⚠️ Note on Empty Shutdown Periods
+
+- The `shutdown_periods.csv` file may appear empty after running the analysis.  
+- **Reason:** There were **no shutdowns or idle periods detected** in the dataset according to the detection criteria (e.g., sensor thresholds, minimum duration).  
+- You can adjust detection parameters in the script if you want to capture shorter or less prominent idle periods:
+  - Lower the **percentile threshold** for sensor inactivity.
+  - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
+
+
 ### Machine State Clustering
 - **KMeans clustering** differentiates operational states.
 - Produces interpretable statistics for each cluster.
@@ -135,15 +144,5 @@ Plots:
 - **Advanced Forecasting:** Apply more sophisticated models (LSTM, Prophet) for longer-term prediction of critical sensor values.  
 - **Integration with Dashboard:** Visualize shutdowns, anomalies, clusters, and forecasts in an interactive dashboard for easier operational decision-making.  
 - **Expansion to Other Machines:** Adapt the workflow to other turbine or cyclone machinery for generalized monitoring and predictive maintenance.  
-
-
-### ⚠️ Note on Empty Shutdown Periods
-
-- The `shutdown_periods.csv` file may appear empty after running the analysis.  
-- **Reason:** There were **no shutdowns or idle periods detected** in the dataset according to the detection criteria (e.g., sensor thresholds, minimum duration).  
-- You can adjust detection parameters in the script if you want to capture shorter or less prominent idle periods:
-  - Lower the **percentile threshold** for sensor inactivity.
-  - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
-
 
 ***
