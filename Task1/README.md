@@ -41,6 +41,19 @@ Task1/
 - Avoids false negatives for idle periods.
 - Option to ignore **short shutdowns (<10 min)** to remove noise.
 
+   1️⃣ Why "ignore short shutdowns (<10 min)"?
+
+   - In sensor data from industrial machines, there are often tiny dips or fluctuations in readings that look like a shutdown, but the machine is actually running.
+
+   - These very short periods (<10 minutes) are usually noise — maybe a minor operational hiccup, sensor lag, or brief power fluctuation.
+
+   - If we count these as real shutdowns, your analysis will overestimate idle periods and create false alerts, which is misleading for maintenance planning.
+
+   - So, by ignoring short shutdowns, you:
+   - ✅ Remove false positives
+   - ✅ Highlight meaningful, real shutdowns
+   - ✅ Make the results cleaner and more actionable
+
 ### Machine State Clustering
 - **KMeans clustering** differentiates operational states.
 - Produces interpretable statistics for each cluster.
