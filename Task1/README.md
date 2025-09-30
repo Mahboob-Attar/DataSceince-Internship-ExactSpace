@@ -133,3 +133,4 @@ Plots:
   - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
 
 
+***
