@@ -32,8 +32,6 @@ Task1/
 └── task1_analysis.ipynb                   # Full analysis script
 ```
 
----
-
 ## ⚡ Key Features
 
 ### Shutdown Detection
