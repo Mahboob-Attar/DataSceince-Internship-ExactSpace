@@ -1,10 +1,3 @@
-Got it — you want a **single plain-text README.md file** with everything included (overview, instructions, outputs, commands, etc.), formatted so users can **directly copy-paste commands** to run without confusion.  
-
-Here’s the clean **all-in-one README.md** you can use:  
-
-***
-
-```markdown
 # Machine Data Analysis – Cyclone Sensor Data
 
 ## 📌 Project Overview
@@ -138,6 +131,4 @@ This project delivers a **robust monitoring and forecasting framework** for cycl
   - Lower the **percentile threshold** for sensor inactivity.
   - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
 
-
-***
 
