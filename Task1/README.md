@@ -39,26 +39,21 @@ Task1/
 - Avoids false negatives for idle periods.
 - Option to ignore **short shutdowns (<10 min)** to remove noise.
 
-   1️⃣ Why "ignore short shutdowns (<10 min)"?
+#### Why ignore short shutdowns (<10 min)?
+- In sensor data from industrial machines, there are often tiny dips or fluctuations that look like a shutdown, but the machine is actually running.
+- These very short periods (<10 minutes) are usually noise — minor operational hiccups, sensor lag, or brief power fluctuations.
+- Counting these as real shutdowns would **overestimate idle periods** and create **false alerts**, misleading maintenance planning.
+- By ignoring short shutdowns:
+  - ✅ Removes false positives
+  - ✅ Highlights meaningful, real shutdowns
+  - ✅ Makes results cleaner and actionable
 
-      - In sensor data from industrial machines, there are often tiny dips or fluctuations in readings that look like a shutdown, but the machine is actually running.
-
-      - These very short periods (<10 minutes) are usually noise — maybe a minor operational hiccup, sensor lag, or brief power fluctuation.
-
-      - If we count these as real shutdowns, your analysis will overestimate idle periods and create false alerts, which is misleading for maintenance planning.
-
-      - So, by ignoring short shutdowns, you:
-      - ✅ Remove false positives
-      - ✅ Highlight meaningful, real shutdowns
-      - ✅ Make the results cleaner and more actionable
-
-   ### ⚠️ Note on Empty Shutdown Periods
-
-      - The `shutdown_periods.csv` file may appear empty after running the analysis.  
-      - **Reason:** There were **no shutdowns or idle periods detected** in the dataset according to the detection criteria (e.g., sensor thresholds, minimum duration).  
-      -  You can adjust detection parameters in the script if you want to capture shorter or less prominent idle periods:
-      - Lower the **percentile threshold** for sensor inactivity.
-      - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
+#### Note on Empty Shutdown Periods
+- The `shutdown_periods.csv` file may appear empty after running the analysis.
+- **Reason:** No shutdowns or idle periods were detected according to the detection criteria (sensor thresholds, minimum duration).
+- You can adjust detection parameters to capture shorter or less prominent idle periods:
+  - Lower the **percentile threshold** for sensor inactivity.
+  - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
 
 
 ### Machine State Clustering
