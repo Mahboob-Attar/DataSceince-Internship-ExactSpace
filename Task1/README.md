@@ -111,11 +111,12 @@ Plots:
 - Clustering provides **contextual understanding** of machine states.  
 - **Dynamic shutdown detection** ensures realistic idle detection.  
 - Anomaly detection enables **early fault identification**.  
-- Short-term forecasting improves **operational planning**.  
+- Short-term forecasting improves **operational planning**.
+  
+## This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
 
-``` This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
-```
 ## 🔮 Future Work
+
 - **Real-Time Anomaly Detection:** Extend the current analysis into a live monitoring system for early fault detection.  
 - **Predictive Maintenance Alerts:** Integrate threshold-based and model-based alerts to notify operators before failures occur.  
 - **Advanced Forecasting:** Apply more sophisticated models (LSTM, Prophet) for longer-term prediction of critical sensor values.  
@@ -124,6 +125,7 @@ Plots:
 
 
 ### ⚠️ Note on Empty Shutdown Periods
+
 - The `shutdown_periods.csv` file may appear empty after running the analysis.  
 - **Reason:** There were **no shutdowns or idle periods detected** in the dataset according to the detection criteria (e.g., sensor thresholds, minimum duration).  
 - You can adjust detection parameters in the script if you want to capture shorter or less prominent idle periods:
