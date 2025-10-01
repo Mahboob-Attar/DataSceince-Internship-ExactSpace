@@ -127,32 +127,32 @@ Plots include:
 
 📝 Insights & Recommendations
 
-Clustering provides valuable context into varying operating modes.
+- Clustering provides valuable context into varying operating modes.
 
-Dynamic shutdown detection improves accuracy of idle period quantification.
+- Dynamic shutdown detection improves accuracy of idle period quantification.
 
-Contextual anomaly detection supports early fault alerts tailored to machine states.
+- Contextual anomaly detection supports early fault alerts tailored to machine states.
 
-Forecasting enables short-term operational planning for temperature-sensitive components.
+- Forecasting enables short-term operational planning for temperature-sensitive components.
 
-Standout Note: Integration of noise-cancellation, Auto-ARIMA, and clear visualizations highlights the practical and technical value of this analysis for stakeholders.
+- Standout Note: Integration of noise-cancellation, Auto-ARIMA, and clear visualizations highlights the practical and technical value of this analysis for stakeholders.
 
 
 ## 🔮 Future Work
 
-Develop real-time anomaly detection and alerting systems.
+- Develop real-time anomaly detection and alerting systems.
 
-Integrate predictive maintenance triggers based on model outputs.
+- Integrate predictive maintenance triggers based on model outputs.
 
-Explore advanced forecasting models such as Auto-ARIMA, LSTM, or Prophet for longer horizons and improved accuracy.
+- Explore advanced forecasting models such as Auto-ARIMA, LSTM, or Prophet for longer horizons and improved accuracy.
 
-Apply noise-cancellation or signal-smoothing techniques to improve shutdown and anomaly detection reliability.
+- Apply noise-cancellation or signal-smoothing techniques to improve shutdown and anomaly detection reliability.
 
-Build an interactive dashboard to visualize clusters, anomalies, shutdowns, and forecasts.
+- Build an interactive dashboard to visualize clusters, anomalies, shutdowns, and forecasts.
 
-Extend methodology to other turbines or cyclone machinery for wider applicability.
+- Extend methodology to other turbines or cyclone machinery for wider applicability.
 
-Investigate hybrid modeling approaches combining time series and machine learning for enhanced predictive power.
+- Investigate hybrid modeling approaches combining time series and machine learning for enhanced predictive power.
 
 
 ## 📞 Support & Contributions
