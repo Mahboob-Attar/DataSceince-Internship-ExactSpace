@@ -59,12 +59,13 @@ Task1/
 - Enables targeted root cause exploration and informed preventive measures.
 
 ### Short-Term Forecasting
-- Focused on forecasting **Cyclone_Inlet_Gas_Temp** for the next hour (12 steps ahead).
-- Compares:
+- Forecasts **Cyclone_Inlet_Gas_Temp** for the next hour (12 steps ahead).
+- Models compared:
   - Baseline persistence model (last known value)
-  - ARIMA time series forecasting model (order (5,1,0))
-- Evaluated using **RMSE (Root Mean Square Error)** and **MAE (Mean Absolute Error)**, with all predictions saved.
+  - ARIMA time series forecasting (order (5,1,0))
+- Evaluated using **RMSE** and **MAE**, with predictions saved.
 - Visualization highlights predictive performance and model comparison.
+- **Potential Improvement:** The forecasting can be further improved using **Auto-ARIMA** to automatically select optimal parameters, potentially increasing prediction accuracy without manual tuning.
 
 ### Visualizations
 - Sensor correlation heatmap to reveal interdependencies.
@@ -141,16 +142,12 @@ Forecasting enables short-term operational planning for temperature-sensitive co
 ---
 
 ## 🔮 Future Work
+- Develop **real-time anomaly detection and alerting systems**.  
+- Integrate **predictive maintenance triggers** based on model outputs.  
+- Explore **advanced forecasting models** such as **Auto-ARIMA, LSTM, or Prophet** for longer horizons and improved accuracy.  
+- Build an **interactive dashboard** to visualize clusters, anomalies, shutdowns, and forecasts.  
+- Extend methodology to **other turbines or cyclone machinery** for wider applicability.
 
-Develop real-time anomaly detection and alerting systems.
-
-Integrate predictive maintenance triggers based on model outputs.
-
-Explore advanced forecasting models (LSTM, Prophet) for longer horizons.
-
-Build an interactive dashboard to visualize clusters, anomalies, shutdowns, and forecasts.
-
-Extend methodology to other turbines or cyclone machinery for wider applicability.
 
 ---
 
