@@ -48,14 +48,6 @@ Task1/
   - ✅ Highlights meaningful, real shutdowns
   - ✅ Makes results cleaner and actionable
 
-#### ⚠️ Note on Empty Shutdown Periods
-- The `shutdown_periods.csv` file may appear empty after running the analysis.
-- **Reason:** No shutdowns or idle periods were detected according to the detection criteria (sensor thresholds, minimum duration).
-- You can adjust detection parameters to capture shorter or less prominent idle periods:
-  - Lower the **percentile threshold** for sensor inactivity.
-  - Reduce the **minimum shutdown duration** (currently set to ignore very short idle periods <10 min).
-
-
 ### Machine State Clustering
 - **KMeans clustering** differentiates operational states.
 - Produces interpretable statistics for each cluster.
