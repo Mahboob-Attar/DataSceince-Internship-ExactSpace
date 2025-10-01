@@ -1,13 +1,13 @@
 # Machine Data Analysis – Cyclone Sensor Data
 
 ## 📌 Project Overview
-This project performs a **full data science workflow on 3 years of cyclone machine sensor data** to provide actionable insights for preventive maintenance, anomaly detection, and operational forecasting.  
+This project performs a **comprehensive data science workflow** on 3 years of cyclone machine sensor data (~370,000 records at 5-minute intervals) aimed at delivering actionable insights for preventive maintenance, anomaly detection, and operational forecasting.
 
-Key objectives:
-- Detect **shutdown/idle periods**
-- Segment **machine operational states using clustering**
-- Identify **contextual anomalies**
-- Perform **short-term forecasting of Cyclone_Inlet_Gas_Temp**
+**Key objectives include:**
+- Identifying **shutdown and idle periods** of the machine
+- Segmenting **machine operational states via clustering**
+- Detecting **contextual anomalies** within operational states
+- Conducting **short-term forecasting** of critical sensor parameter *Cyclone_Inlet_Gas_Temp*
 
 ---
 
@@ -32,48 +32,51 @@ Task1/
 └── task1_analysis.ipynb                   # Full analysis script
 ```
 
+
+---
+
 ## ⚡ Key Features
 
 ### Shutdown Detection
-- Uses **sensor-specific percentiles** instead of fixed thresholds.
-- Avoids false negatives for idle periods.
-- Option to ignore **short shutdowns (<10 min)** to remove noise.
+- Utilizes **sensor-specific 5th percentile thresholds** instead of fixed values to adapt to sensor variability.
+- **Ignores short shutdowns (<10 minutes)** to reduce noise caused by minimal fluctuations or sensor lag.
+- Ensures detection of **meaningful and sustained shutdowns or idle periods** for accurate machine downtime representation.
 
-#### Why ignore short shutdowns (<10 min)?
-- In sensor data from industrial machines, there are often tiny dips or fluctuations that look like a shutdown, but the machine is actually running.
-- These very short periods (<10 minutes) are usually noise — minor operational hiccups, sensor lag, or brief power fluctuations.
-- Counting these as real shutdowns would **overestimate idle periods** and create **false alerts**, misleading maintenance planning.
-- By ignoring short shutdowns:
-  - ✅ Removes false positives
-  - ✅ Highlights meaningful, real shutdowns
-  - ✅ Makes results cleaner and actionable
+### Why ignore shutdowns shorter than 10 minutes?
+- Minor operational fluctuations or sensor noise often mimic shutdowns.
+- Including these falsely inflates idle time and complicates maintenance scheduling.
+- Filtering generates cleaner and more actionable shutdown event logs.
 
 ### Machine State Clustering
-- **KMeans clustering** differentiates operational states.
-- Produces interpretable statistics for each cluster.
+- Implements **KMeans clustering** for segmentation of active machine operational states.
+- Excludes shutdown data to focus on active behavior patterns.
+- Produces interpretable clusters that represent different machine states such as Normal, Startup/Shutdown, High Load, and Degraded.
+- Outputs cluster statistics covering mean, standard deviation, and occurrence frequency.
 
 ### Contextual Anomaly Detection
-- **Isolation Forest** applied within clusters for precision.
-- Produces consolidated anomaly logs with timestamps and cluster info.
+- Applies **Isolation Forest models separately on each cluster** for precise anomaly identification sensitive to operational context.
+- Consolidates anomalous events with timestamps, sensor readings, and cluster labels for further investigation.
+- Enables targeted root cause exploration and informed preventive measures.
 
 ### Short-Term Forecasting
-- Focus: **Cyclone_Inlet_Gas_Temp**
-- Implements:
-  - **Persistence model** (baseline)
-  - **ARIMA model** (advanced)
-- Evaluated using **RMSE & MAE**
+- Focused on forecasting **Cyclone_Inlet_Gas_Temp** for the next hour (12 steps ahead).
+- Compares:
+  - Baseline persistence model (last known value)
+  - ARIMA time series forecasting model (order (5,1,0))
+- Evaluated using **RMSE (Root Mean Square Error)** and **MAE (Mean Absolute Error)**, with all predictions saved.
+- Visualization highlights predictive performance and model comparison.
 
 ### Visualizations
-- Correlation heatmap
-- Sample **1-week and 1-year** trends
-- Shutdown highlights
-- Forecast vs actual plots
+- Sensor correlation heatmap to reveal interdependencies.
+- Time series plots for one week and one year showing typical sensor behavior.
+- Annual shutdown timeline annotated with strict (80%) and relaxed (60%) detection thresholds.
+- Forecast comparison plot presenting actual vs predicted temperature trends.
 
 ---
 
 ## 🛠️ Setup Instructions
 
-1. **Clone folder / move into directory**
+1. **Clone or navigate to the project directory**  
    ```
    cd Task1
    ```
@@ -93,41 +96,55 @@ Task1/
 
 5. **Check results**  
    - Outputs (`.csv` files) will be in `Task1/outputs/`  
-   - Plots (`.png` files) will be in `Task1/plots/`  
+   - Plots (`.png` files) will be in `Task1/plots/`
+
+---
+
+
+5. **Review results**  
+- Output CSV files will be saved in `Task1/outputs/`  
+- Plot images will be saved in `Task1/plots/`
 
 ---
 
 ## 📊 Generated Outputs
 
-- **summary_statistics.csv** → Descriptive statistics of all sensors  
-- **shutdown_periods.csv** → Start, end, duration of shutdowns  
-- **clusters_summary.csv** → Cluster-level operational statistics  
-- **anomalous_periods.csv** → Contextual anomalies with cluster info  
-- **forecasts.csv** → Actual vs predicted Cyclone_Inlet_Gas_Temp  
+| File                      | Description                                 |
+|---------------------------|---------------------------------------------|
+| summary_statistics.csv    | Descriptive statistics of all sensor data  |
+| shutdown_periods.csv      | Shutdown and idle event timestamps & duration |
+| clusters_summary.csv      | Statistics and behavior summary per cluster |
+| anomalous_periods.csv     | Detected anomalies with contextual info     |
+| forecasts.csv             | Actual vs predicted Cyclone_Inlet_Gas_Temp |
 
-Plots:
-- `correlation_matrix.png`  
-- `one_week.png`  
-- `one_year.png`  
-- `shutdowns_year.png`  
-- `forecast_comparison.png`
+Plots include:  
+`correlation_matrix.png`, `one_week.png`, `one_year.png`, `shutdowns_year.png`, `forecast_comparison.png`
 
 ---
 
 ## 📝 Insights & Recommendations
-- Clustering provides **contextual understanding** of machine states.  
-- **Dynamic shutdown detection** ensures realistic idle detection.  
-- Anomaly detection enables **early fault identification**.  
-- Short-term forecasting improves **operational planning**.
-  
-## This project delivers a **robust monitoring and forecasting framework** for cyclone machinery, helping improve **efficiency, reliability, and preventive maintenance planning**.
+
+- Clustering provides **valuable context** into varying operating modes for targeted monitoring.
+- Dynamic shutdown detection approach improves **accuracy of idle period quantification**.
+- Contextual anomaly detection supports **early fault alerts** tailored to machine states.
+- Forecasting allows better **short-term operational planning** for temperature-sensitive components.
+
+---
 
 ## 🔮 Future Work
 
-- **Real-Time Anomaly Detection:** Extend the current analysis into a live monitoring system for early fault detection.  
-- **Predictive Maintenance Alerts:** Integrate threshold-based and model-based alerts to notify operators before failures occur.  
-- **Advanced Forecasting:** Apply more sophisticated models (LSTM, Prophet) for longer-term prediction of critical sensor values.  
-- **Integration with Dashboard:** Visualize shutdowns, anomalies, clusters, and forecasts in an interactive dashboard for easier operational decision-making.  
-- **Expansion to Other Machines:** Adapt the workflow to other turbine or cyclone machinery for generalized monitoring and predictive maintenance.  
+- Develop **real-time anomaly detection and alerting systems**.
+- Integrate **predictive maintenance triggers** based on model outputs.
+- Explore more advanced forecasting models such as **LSTM or Prophet** for longer horizons.
+- Build an **interactive dashboard** to visualize clusters, anomalies, shutdowns, and forecasts.
+- Extend methodology to **other turbines or cyclone machinery** for wider applicability.
 
-***
+---
+
+## 📞 Support & Contributions
+
+For issues or contributions, please open an issue or pull request in this repository.
+
+---
+
+*This project aims to deliver a robust monitoring and forecasting framework to improve cyclone machine efficiency, reliability, and maintenance strategy.*
