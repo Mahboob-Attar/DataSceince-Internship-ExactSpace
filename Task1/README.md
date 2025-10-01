@@ -1,6 +1,4 @@
 # Machine Data Analysis – Cyclone Sensor Data
-
-
 ## 📌 Project Overview
 This project performs a **comprehensive data science workflow** on 3 years of cyclone machine sensor data (~370,000 records at 5-minute intervals). The analysis aims to deliver actionable insights for **preventive maintenance, anomaly detection, and operational forecasting**, helping optimize turbine efficiency and reliability.
 
