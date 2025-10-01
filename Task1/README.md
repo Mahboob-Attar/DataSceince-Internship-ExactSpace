@@ -91,7 +91,8 @@ Task1/
 
 4. **Run the analysis**
    # Jupyter Notebook
-      ```jupyter notebook task1_analysis.ipynb
+      ```
+      jupyter notebook task1_analysis.ipynb
       ```
    # OR Python script
    ```
