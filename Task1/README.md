@@ -1,6 +1,5 @@
 # Machine Data Analysis – Cyclone Sensor Data
 
----
 
 ## 📌 Project Overview
 This project performs a **comprehensive data science workflow** on 3 years of cyclone machine sensor data (~370,000 records at 5-minute intervals). The analysis aims to deliver actionable insights for **preventive maintenance, anomaly detection, and operational forecasting**, helping optimize turbine efficiency and reliability.
@@ -14,7 +13,6 @@ This project performs a **comprehensive data science workflow** on 3 years of cy
 **Why this matters:**  
 Accurate detection of operational patterns, anomalies, and forecasts enables informed maintenance decisions, reduces unplanned downtime, and enhances turbine performance.
 
----
 
 ## 📂 Folder Structure
 
@@ -37,7 +35,6 @@ Task1/
 │
 └── task1_analysis.ipynb                   # Full analysis script
 ```
----
 
 ## ⚡ Key Features
 
@@ -80,7 +77,6 @@ Task1/
 - Forecast comparison plot of actual vs predicted temperature trends.
 - **Portfolio Standout:** Visualizations convey complex patterns in an easy-to-understand, story-like format.
 
----
 
 ## 🛠️ Setup Instructions
 
@@ -110,14 +106,12 @@ Task1/
    - Outputs (`.csv` files) will be in `Task1/outputs/`  
    - Plots (`.png` files) will be in `Task1/plots/`
 
----
 
 
 5. **Review results**  
 - Output CSV files will be saved in `Task1/outputs/`  
 - Plot images will be saved in `Task1/plots/`
 
----
 
 ## 📊 Generated Outputs
 
@@ -132,7 +126,6 @@ Task1/
 Plots include:  
 `correlation_matrix.png`, `one_week.png`, `one_year.png`, `shutdowns_year.png`, `forecast_comparison.png`
 
----
 
 📝 Insights & Recommendations
 
@@ -146,7 +139,6 @@ Forecasting enables short-term operational planning for temperature-sensitive co
 
 Standout Note: Integration of noise-cancellation, Auto-ARIMA, and clear visualizations highlights the practical and technical value of this analysis for stakeholders.
 
----
 
 ## 🔮 Future Work
 
@@ -164,12 +156,10 @@ Extend methodology to other turbines or cyclone machinery for wider applicabilit
 
 Investigate hybrid modeling approaches combining time series and machine learning for enhanced predictive power.
 
----
 
 ## 📞 Support & Contributions
 
 For issues or contributions, please open an issue or pull request in this repository.
 
----
 
 *This project aims to deliver a robust monitoring and forecasting framework to improve cyclone machine efficiency, reliability, and maintenance strategy.*
