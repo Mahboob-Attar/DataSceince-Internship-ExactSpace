@@ -90,10 +90,13 @@ Task1/
    Place your `cyclone_data.xlsx` file in the same directory as `task1_analysis.py`.
 
 4. **Run the analysis**
+   # Jupyter Notebook
+      ```jupyter notebook task1_analysis.ipynb
+      ```
+   # OR Python script
    ```
    python task1_analysis.py
    ```
-
 5. **Check results**  
    - Outputs (`.csv` files) will be in `Task1/outputs/`  
    - Plots (`.png` files) will be in `Task1/plots/`
@@ -109,13 +112,13 @@ Task1/
 
 ## 📊 Generated Outputs
 
-| File                      | Description                                 |
-|---------------------------|---------------------------------------------|
-| summary_statistics.csv    | Descriptive statistics of all sensor data  |
-| shutdown_periods.csv      | Shutdown and idle event timestamps & duration |
-| clusters_summary.csv      | Statistics and behavior summary per cluster |
-| anomalous_periods.csv     | Detected anomalies with contextual info     |
-| forecasts.csv             | Actual vs predicted Cyclone_Inlet_Gas_Temp |
+| File                   | Description                                   |
+| ---------------------- | --------------------------------------------- |
+| summary_statistics.csv | Descriptive statistics of all sensor data     |
+| shutdown_periods.csv   | Shutdown and idle event timestamps & duration |
+| clusters_summary.csv   | Statistics and behavior summary per cluster   |
+| anomalous_periods.csv  | Detected anomalies with contextual info       |
+| forecasts.csv          | Actual vs predicted Cyclone_Inlet_Gas_Temp    |
 
 Plots include:  
 `correlation_matrix.png`, `one_week.png`, `one_year.png`, `shutdowns_year.png`, `forecast_comparison.png`
@@ -124,20 +127,29 @@ Plots include:
 
 ## 📝 Insights & Recommendations
 
-- Clustering provides **valuable context** into varying operating modes for targeted monitoring.
-- Dynamic shutdown detection approach improves **accuracy of idle period quantification**.
-- Contextual anomaly detection supports **early fault alerts** tailored to machine states.
-- Forecasting allows better **short-term operational planning** for temperature-sensitive components.
+📝 Insights & Recommendations
+
+Clustering provides valuable context into varying operating modes.
+
+Dynamic shutdown detection improves accuracy of idle period quantification.
+
+Contextual anomaly detection supports early fault alerts tailored to machine states.
+
+Forecasting enables short-term operational planning for temperature-sensitive components.
 
 ---
 
 ## 🔮 Future Work
 
-- Develop **real-time anomaly detection and alerting systems**.
-- Integrate **predictive maintenance triggers** based on model outputs.
-- Explore more advanced forecasting models such as **LSTM or Prophet** for longer horizons.
-- Build an **interactive dashboard** to visualize clusters, anomalies, shutdowns, and forecasts.
-- Extend methodology to **other turbines or cyclone machinery** for wider applicability.
+Develop real-time anomaly detection and alerting systems.
+
+Integrate predictive maintenance triggers based on model outputs.
+
+Explore advanced forecasting models (LSTM, Prophet) for longer horizons.
+
+Build an interactive dashboard to visualize clusters, anomalies, shutdowns, and forecasts.
+
+Extend methodology to other turbines or cyclone machinery for wider applicability.
 
 ---
 
