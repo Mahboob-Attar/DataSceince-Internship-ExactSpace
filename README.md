@@ -1,4 +1,4 @@
-# 📌 Internship Project – Dual Tasks (Data Science + NLP)
+# 📌 Internship Project – Dual Tasks (Data Science + ML + NLP)
 
 Welcome to the **Internship Project Repository**, containing **two completely independent AI/ML tasks**.  
 This project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
