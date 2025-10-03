@@ -76,6 +76,6 @@ Before running a task, install its dependencies by navigating into the task fold
 Before running any task, make sure you have installed the required dependencies.
 Each task also has additional setup notes inside its respective README:
 
-# Task 1 → see Task1/README.md (uses requirements_task1.txt)
+**Task 1 → see Task1/README.md (uses requirements_task1.txt)**
 
-# Task 2 → see Task2/README.md (uses requirements_task2.txt)
+**Task 2 → see Task2/README.md (uses requirements_task2.txt)**
