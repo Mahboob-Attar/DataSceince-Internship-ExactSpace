@@ -1,4 +1,4 @@
-# 📌 Internship Project – Dual Tasks (Data Science + ML + NLP)
+# 📌 Internship Project – Dual Tasks (Data Science + NLP)
 
 Welcome to the **Internship Project Repository**, containing **two completely independent AI/ML tasks**.  
 This project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
@@ -9,8 +9,8 @@ This project demonstrates applied skills in both **industrial time-series analys
 
 **Task 1 (Machine Data Analysis)** and **Task 2 (RAG + LLM)** are **fully independent**:
 
-- **Task 1** → Time-series sensor analysis: **data cleaning, shutdown detection, clustering, anomaly detection, and forecasting**.  
-- **Task 2** → RAG-based document search: **querying technical PDFs using vector embeddings and open-source LLMs**.  
+- **Task 1** → Time-series sensor analysis: **data cleaning, shutdown detection, clustering, anomaly detection, and forecasting**  
+- **Task 2** → RAG-based document search: **querying technical PDFs using vector embeddings and open-source LLMs**  
 
 There is **no direct dependency** between the tasks.  
 Together, they showcase **end-to-end applied AI capabilities** in **Data Science + Machine Learning + NLP/LLM system design**.
@@ -29,8 +29,8 @@ Focus areas include:
 - **Anomaly detection**  
 - **Short-term forecasting**  
 
-> All code, datasets, and outputs are in the `Task1/` folder.  
-> (Separate README available inside `Task1/` for detailed instructions.)
+All code, datasets, and outputs are in the `Task1/` folder.  
+A **separate README** inside the folder contains detailed instructions.
 
 ---
 
@@ -45,8 +45,8 @@ Key components:
 - **Open-source LLM-based answer generation with citations**  
 - **Guardrails to ensure reliability and prevent hallucinations**  
 
-> Full code, prototype, sample documents, and architecture diagrams are in the `Task2/` folder.  
-> (Separate README available inside `Task2/` for detailed instructions.)
+Full code, prototypes, sample documents, and architecture diagrams are in the `Task2/` folder.  
+A **separate README** inside the folder contains detailed instructions.
 
 ---
 
@@ -60,4 +60,3 @@ This project highlights **two complementary AI/ML capabilities**:
 Together, they showcase the ability to handle **both data-heavy ML tasks and modern NLP/LLM system development**, providing a **full-stack applied AI experience**.
 
 ---
-
