@@ -1,7 +1,7 @@
 # 📌 Internship Project – Dual Tasks (Data Science + ML + NLP)
 
-Welcome to the **Internship Project Repository**, containing **two completely independent AI/ML tasks**.  
-This project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
+This Repository containing **two completely independent AI/ML tasks**.  
+The project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
 
 
 ## ⚠️ Important Note
@@ -57,4 +57,16 @@ This project highlights **two complementary AI/ML capabilities**:
 2. **Task 2** → **RAG + LLM system design** for document-based Q&A  
 
 Together, they showcase the ability to handle **both data-heavy ML tasks and modern NLP/LLM system development**, providing a **full-stack applied AI experience**.
+
+---
+
+## 📦 Requirements
+
+Each task has its own environment dependencies, stored in separate files:
+
+- **Task1/** → `requirements_task1.txt` (time-series analysis: pandas, numpy, matplotlib, statsmodels, etc.)  
+- **Task2/** → `requirements_task2.txt` (RAG + LLM prototype: pdfplumber, sentence-transformers, faiss-cpu, transformers, chromadb, etc.)  
+
+Before running a task, install its dependencies by navigating into the task folder and running:
+
 
