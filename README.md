@@ -3,7 +3,6 @@
 Welcome to the **Internship Project Repository**, containing **two completely independent AI/ML tasks**.  
 This project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
 
----
 
 ## ⚠️ Important Note
 
@@ -59,4 +58,3 @@ This project highlights **two complementary AI/ML capabilities**:
 
 Together, they showcase the ability to handle **both data-heavy ML tasks and modern NLP/LLM system development**, providing a **full-stack applied AI experience**.
 
----
