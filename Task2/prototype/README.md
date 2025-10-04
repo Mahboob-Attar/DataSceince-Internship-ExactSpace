@@ -139,6 +139,8 @@ The system consists of the following components:
     - if u want ask other questions related to the project like what is cyclone? before it enable last code to ask question conyineously in .ipynb file 
     - 📝 Note: The Chroma vector database is automatically created the first time you run a query.
 
+---
+
 ## 📊 System Outputs
 
 | Output              | Description                                         |
