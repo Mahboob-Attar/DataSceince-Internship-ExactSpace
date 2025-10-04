@@ -18,6 +18,7 @@ Users can quickly extract meaningful insights from large technical documentation
 ---
 
 ## 📂 Folder Structure
+```
 ask2/
 └── prototype/
 ├── docs/                                           # PDF manuals and technical documents
@@ -29,7 +30,7 @@ ask2/
 ├── requirements_task2.txt                          # Python dependencies
 ├── architecture_diagram.pptx
 └── notes.md                                        # System design notes and explanations
-
+```
 
 ---
 
@@ -94,10 +95,10 @@ ask2/
         ```
 
 7. **Test a query**
-    ```
-    What are the safety precautions and features of cyclone?
-    ```
-    - Answers will include cited bullet-pointed results if u want ask other wuestions related to the project lie what is cyclone?
+
+    - Auto query: What are the safety precautions and features of cyclone?
+   
+    - if u want ask other questions related to the project like what is cyclone? before it enable last code to ask question conyineously in .ipynb file 
 
 ---
 
