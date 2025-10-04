@@ -113,7 +113,7 @@ Task1/
 7. **Review results**  
 - Output CSV files will be saved in `Task1/outputs/`  
 - Plot images will be saved in `Task1/plots/`
-
+- the ouput nad plots folders are auto generated no need to create manually
 
 ## 📊 Generated Outputs
 

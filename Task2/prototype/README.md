@@ -23,8 +23,8 @@ ask2/
 └── prototype/
 ├── docs/                                           # PDF manuals and technical documents
 │ └── (your PDFs go here)
-├── outputs/                                        # (optional for future results)
-├── vector_db/                                      # generated embeddings storage
+├── Evaluation_Mtarics/                             # (optional for future results)
+├── vector_db/                                      # Auto generated embeddings storage
 ├── README.md                                       # This README file
 ├── rag_prototype.ipynb                             # Prototype notebook with full workflow
 ├── requirements_task2.txt                          # Python dependencies
@@ -99,7 +99,7 @@ ask2/
     - Auto query: What are the safety precautions and features of cyclone?
    
     - if u want ask other questions related to the project like what is cyclone? before it enable last code to ask question conyineously in .ipynb file 
-
+    - the Vector db autogeerate when u run the query chroma Db uses in this
 ---
 
 ## 📊 System Outputs
