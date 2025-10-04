@@ -16,12 +16,44 @@ It combines **intelligent retrieval** with **LLM-based answer generation**, ensu
 ## 2. System Architecture
 
 **Architecture Flow:**
-
-[Documents] → [Preprocessing & NLTK] → [Sentence Splitting] → [Embedding Model] → [Vector DB (sentence-level)]
-↑
-[User Query]
-↓
-[Retrieval Layer] → [LLM Answer Generator] → [Guardrails & Formatting]
+          ┌────────────────────┐
+          │   Documents (.pdf) │
+          └─────────┬──────────┘
+                    │
+                    ▼
+          ┌────────────────────┐
+          │ Preprocessing +    │
+          │ Sentence Splitting │
+          │ (NLTK)             │
+          └─────────┬──────────┘
+                    │
+                    ▼
+          ┌────────────────────┐
+          │  Embedding Model   │
+          │ (SentenceTransformers) │
+          └─────────┬──────────┘
+                    │
+                    ▼
+          ┌────────────────────┐
+          │   Vector Database  │
+          │ (Chroma/FAISS/...)│
+          └─────────┬──────────┘
+                    │
+          ┌─────────▼──────────┐
+          │  Retrieval Layer   │
+          └─────────┬──────────┘
+                    │
+                    ▼
+          ┌────────────────────┐
+          │  LLM Answer Gen.   │
+          │ (flan-t5, Llama2)  │
+          └─────────┬──────────┘
+                    │
+                    ▼
+          ┌────────────────────┐
+          │ Guardrails &       │
+          │ Formatting          │
+          └────────────────────┘
 
 
 **Components Overview:**
