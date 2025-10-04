@@ -78,7 +78,7 @@ ask2/
 
 4. **Install requirements**
     ```
-    pip install -r task2/requirements_task2.txt
+    pip install -r task2/prototype/requirements_task2.txt
     ```
 
 5. **Add your technical documents**
