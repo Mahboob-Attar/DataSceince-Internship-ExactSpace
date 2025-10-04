@@ -103,7 +103,30 @@ The system consists of the following components:
 
 ## 🛠️ Setup Instructions
 
-1. **Clone the repository**
+⚡ **Important: Use a Separate Virtual Environment**
+
+Before installing dependencies, it is **strongly recommended** to create
+a separate Python virtual environment to avoid conflicts with your system packages.
+
+**Steps to create and activate a virtual environment:**
+
+1. Using `venv` (Python standard library):
+
+    # Create a new virtual environment
+   ```
+   python -m venv rag_env
+   ```
+
+   # Activate the environment (Windows)
+   ```
+   rag_env\Scripts\activate
+    ```
+   # Activate the environment (Linux / macOS)
+   ```
+   source rag_env/bin/activate
+    ```
+
+2. **Clone the repository**
     git clone <your-repo-url>
     ```
     cd Task2/prototype

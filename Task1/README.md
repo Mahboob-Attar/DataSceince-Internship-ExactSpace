@@ -78,24 +78,47 @@ Task1/
 
 ## 🛠️ Setup Instructions
 
-1. **Clone or navigate to the project directory**  
+⚡ **Important: Use a Separate Virtual Environment**
+
+Before installing dependencies, it is **strongly recommended** to create
+a separate Python virtual environment to avoid conflicts with your system packages.
+
+**Steps to create and activate a virtual environment:**
+
+1. Using `venv` (Python standard library):
+
+    # Create a new virtual environment
+   ```
+   python -m venv rag_env
+   ```
+
+   # Activate the environment (Windows)
+   ```
+   rag_env\Scripts\activate
+    ```
+   # Activate the environment (Linux / macOS)
+   ```
+   source rag_env/bin/activate
+    ```
+
+2. **Clone or navigate to the project directory**  
       using git clone comand with url
    ```
    cd Task1
    ```
-2. **Upgrade pip**
+3. **Upgrade pip**
     ```
     pip install --upgrade pip
     ```
-3. **Install dependencies**
+4. **Install dependencies**
    ```
     pip install -r task1/requirements_task1.txt
    ```
 
-4. **Add dataset**  
+5. **Add dataset**  
    Place your `cyclone_data.xlsx` file in the same directory as `task1_analysis.py`.
 
-5. **Run the analysis**
+6. **Run the analysis**
    # Jupyter Notebook
       ```
       jupyter notebook task1_analysis.ipynb
@@ -104,13 +127,13 @@ Task1/
    ```
    python task1_analysis.py
    ```
-6. **Check results**  
+7. **Check results**  
    - Outputs (`.csv` files) will be in `Task1/outputs/`  
    - Plots (`.png` files) will be in `Task1/plots/`
 
 
 
-7. **Review results**  
+8. **Review results**  
 - Output CSV files will be saved in `Task1/outputs/`  
 - Plot images will be saved in `Task1/plots/`
 - the ouput nad plots folders are auto generated no need to create manually
