@@ -69,8 +69,8 @@ ask2/
 ## 🛠️ Setup Instructions
 
 1. **Clone the repository**
-    ```
     git clone <your-repo-url>
+    ```
     cd Task2/prototype
     ```
 
