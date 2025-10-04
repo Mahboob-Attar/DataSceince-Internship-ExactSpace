@@ -35,10 +35,6 @@ ask2/
 
 ## ⚡ Key Features
 
----
-
-## ⚡ Key Features
-
 ### Sentence-Level Retrieval
 - Splits documents into **independent sentences** for fine-grained semantic search
 - Returns only the most **relevant sentences** to each user query
