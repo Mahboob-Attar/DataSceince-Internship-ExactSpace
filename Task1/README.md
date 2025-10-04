@@ -79,19 +79,23 @@ Task1/
 ## 🛠️ Setup Instructions
 
 1. **Clone or navigate to the project directory**  
+      using git clone comand with url
    ```
    cd Task1
    ```
-
-2. **Install dependencies**
+2. **Upgrade pip**
+    ```
+    pip install --upgrade pip
+    ```
+3. **Install dependencies**
    ```
    pip install -r requirements_task1.txt
    ```
 
-3. **Add dataset**  
+4. **Add dataset**  
    Place your `cyclone_data.xlsx` file in the same directory as `task1_analysis.py`.
 
-4. **Run the analysis**
+5. **Run the analysis**
    # Jupyter Notebook
       ```
       jupyter notebook task1_analysis.ipynb
@@ -100,13 +104,13 @@ Task1/
    ```
    python task1_analysis.py
    ```
-5. **Check results**  
+6. **Check results**  
    - Outputs (`.csv` files) will be in `Task1/outputs/`  
    - Plots (`.png` files) will be in `Task1/plots/`
 
 
 
-5. **Review results**  
+7. **Review results**  
 - Output CSV files will be saved in `Task1/outputs/`  
 - Plot images will be saved in `Task1/plots/`
 
