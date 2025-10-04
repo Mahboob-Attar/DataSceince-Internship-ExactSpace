@@ -89,7 +89,7 @@ Task1/
     ```
 3. **Install dependencies**
    ```
-   pip install -r requirements_task1.txt
+    pip install -r task1/requirements_task1.txt
    ```
 
 4. **Add dataset**  
