@@ -185,10 +185,4 @@ a separate Python virtual environment to avoid conflicts with your system packag
 
 ---
 
-## 📞 Support & Contributions
-
-For issues, feature requests, or contributions, please open an issue or pull request in this repository.
-
----
-
 *This prototype demonstrates a scalable, precise, and robust RAG system for querying technical documentation—ideal for portfolio projects, research, and real-world applications.*

@@ -34,6 +34,8 @@ Task1/
 └── task1_analysis.ipynb                   # Full analysis script
 ```
 
+---
+
 ## ⚡ Key Features
 
 ### Shutdown Detection
@@ -75,6 +77,7 @@ Task1/
 - Forecast comparison plot of actual vs predicted temperature trends.
 - **Portfolio Standout:** Visualizations convey complex patterns in an easy-to-understand, story-like format.
 
+---
 
 ## 🛠️ Setup Instructions
 
@@ -132,11 +135,12 @@ a separate Python virtual environment to avoid conflicts with your system packag
    - Plots (`.png` files) will be in `Task1/plots/`
 
 
-
 8. **Review results**  
 - Output CSV files will be saved in `Task1/outputs/`  
 - Plot images will be saved in `Task1/plots/`
 - the ouput nad plots folders are auto generated no need to create manually
+
+---
 
 ## 📊 Generated Outputs
 
@@ -151,7 +155,6 @@ a separate Python virtual environment to avoid conflicts with your system packag
 Plots include:  
 `correlation_matrix.png`, `one_week.png`, `one_year.png`, `shutdowns_year.png`, `forecast_comparison.png`
 
-
 📝 Insights & Recommendations
 
 - Clustering provides valuable context into varying operating modes.
@@ -164,7 +167,7 @@ Plots include:
 
 - Standout Note: Integration of noise-cancellation, Auto-ARIMA, and clear visualizations highlights the practical and technical value of this analysis for stakeholders.
 
-
+---
 ## 🔮 Future Work
 
 - Develop real-time anomaly detection and alerting systems.
@@ -180,11 +183,6 @@ Plots include:
 - Extend methodology to other turbines or cyclone machinery for wider applicability.
 
 - Investigate hybrid modeling approaches combining time series and machine learning for enhanced predictive power.
-
-
-## 📞 Support & Contributions
-
-For issues or contributions, please open an issue or pull request in this repository.
-
+---
 
 *This project aims to deliver a robust monitoring and forecasting framework to improve cyclone machine efficiency, reliability, and maintenance strategy.*
