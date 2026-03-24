@@ -15,23 +15,28 @@ Accurate detection of operational patterns, anomalies, and forecasts enables inf
 ## 📂 Folder Structure
 
 ```
+## Folder Structure
+
 Task1/
 │
+├── data/
+│   └── cleaned_cyclone.csv          # Cleaned input data
+│
 ├── outputs/
-│   ├── summary_statistics.csv          # Descriptive statistics of all sensors
-│   ├── shutdown_periods.csv            # Detected shutdown/idle periods
-│   ├── anomalous_periods.csv           # Contextual anomalies with sensor readings
-│   ├── clusters_summary.csv            # Operational states cluster summary
-│   └── forecasts.csv                   # True vs predicted Cyclone_Inlet_Gas_Temp
+│   ├── shutdown_periods.csv         # Detected shutdown events
+│   ├── anomalous_periods.csv        # Contextual anomalies with metadata
+│   ├── clusters_summary.csv         # Summary statistics of machine states
+│   ├── forecasts.csv                # True vs predicted values for forecasting
+│   └── insights.md                  # Human-readable insights and recommendations
 │
 ├── plots/
-│   ├── correlation_matrix.png          # Sensor correlation heatmap
-│   ├── one_week.png                    # Sample 1-week sensor trends
-│   ├── one_year.png                    # Sample 1-year sensor trends
-│   ├── shutdowns_year.png              # Shutdown periods highlighted
-│   └── forecast_comparison.png         # Forecast vs actual comparison
+│   ├── year_with_shutdowns.png      # Visualization of shutdown periods
+│   ├── cluster_distributions.png    # Cluster behavior summary plot
+│   ├── anomalies_plot1.png          # Example anomaly visualizations
+│   └── ... (other PNGs generated)
 │
-└── task1_analysis.ipynb                   # Full analysis script
+├── task1_analysis.ipynb             # Jupyter Notebook with full code
+└── README.md                         # This file
 ```
 
 ---
