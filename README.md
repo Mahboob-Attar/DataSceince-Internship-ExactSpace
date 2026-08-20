@@ -1,10 +1,10 @@
-# 📌 Internship Project – Dual Tasks (Data Science + ML + NLP)
+#  Internship Project – Dual Tasks (Data Science + ML + NLP)
 
 This Repository containing **two completely independent AI/ML tasks**.  
 The project demonstrates applied skills in both **industrial time-series analysis** and **natural language processing with LLMs**.
 
 
-## ⚠️ Important Note
+## Important Note
 
 **Task 1 (Machine Data Analysis)** and **Task 2 (RAG + LLM)** are **fully independent**:
 
@@ -16,7 +16,7 @@ Together, they showcase **end-to-end applied AI capabilities** in **Data Science
 
 ---
 
-## 🏭 Task 1: Machine Data Analysis
+## Task 1: Machine Data Analysis
 
 This task works with **3 years of cyclone machine sensor data** (~370,000 records at 5-minute intervals).  
 
@@ -33,7 +33,7 @@ A **separate README** inside the folder contains detailed instructions.
 
 ---
 
-## 🤖 Task 2: Retrieval-Augmented Generation (RAG) + LLM
+##  Task 2: Retrieval-Augmented Generation (RAG) + LLM
 
 This task involves building a **RAG system** to allow **natural language querying of technical PDFs** (manuals, SOPs, troubleshooting guides).  
 
@@ -49,7 +49,7 @@ A **separate README** inside the folder contains detailed instructions.
 
 ---
 
-## ✅ Final Takeaway
+## Final Takeaway
 
 This project highlights **two complementary AI/ML capabilities**:
 
@@ -60,7 +60,7 @@ Together, they showcase the ability to handle **both data-heavy ML tasks and mod
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 Each task has its own environment dependencies, stored in separate files:
 
@@ -71,7 +71,7 @@ Before running a task, install its dependencies by navigating into the task fold
 
 ---
 
-## ⚙️ Setup Reminder
+##  Setup Reminder
 
 Before running any task, make sure you have installed the required dependencies.
 Each task also has additional setup notes inside its respective README:
